@@ -1,5 +1,7 @@
 import java.util.*;
 
+//Algoritmo Greedy que halla los mejores elementos de acuerdo a su promedio para llenar una mochila con Capacidad(Peso) x //
+
 public class AlgoritmoGreedy {
 	
 	
@@ -8,8 +10,10 @@ public class AlgoritmoGreedy {
 		int capacidad = mochila.getCapacidad();
 		int index = 0;
 		
+		//Miestras que existan elementos
 		while(elementos != null && elementos.size() > 0) {
 			
+			//Obtengo el Index del elemento con mejor promedio valor/peso
 			index = getElementoMaxPromedio(elementos);
 			
 			if(elementos.get(index).getPeso() <= capacidad) {				

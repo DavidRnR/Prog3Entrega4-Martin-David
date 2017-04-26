@@ -1,5 +1,8 @@
 import java.util.*;
 
+//******** Programación III - Entrega 4**********************
+//******** Martín, Carlos David - 31156181 ******************
+//******** TUDAI - Facultad de Cs. Exactas ******************
 public class Sim {
 
 	public static void main(String[] args) {
@@ -21,7 +24,8 @@ public class Sim {
 
 		List<Elemento> elmEnMochila = AlgoritmoGreedy.getMaxElementos(mochila, elementos);
 
-
+		
+		//Imprimir elementos para la mochila
 		for (Elemento el : elmEnMochila) {
 			System.out.println("Elemento: "+el.getNombre()+" Peso: "+el.getPeso());			
 		}
